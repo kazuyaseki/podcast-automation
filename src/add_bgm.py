@@ -1,3 +1,4 @@
+import argparse
 from pydub import AudioSegment
 
 def add_bgm(input_path: str, output_path: str, bgm_path: str, bgm_volume: float = -29) -> None:
@@ -32,8 +33,6 @@ def add_bgm(input_path: str, output_path: str, bgm_path: str, bgm_volume: float 
 
 
 if __name__ == "__main__":
-    import sys
-    import argparse
 
     parser = argparse.ArgumentParser(description="BGMを追加するスクリプト")
     parser.add_argument("--input_path", help="入力オーディオファイルのパス")
