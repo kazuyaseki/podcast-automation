@@ -1,7 +1,7 @@
 import argparse
 from pydub import AudioSegment
 
-def add_bgm(input_path: str, output_path: str, bgm_path: str, bgm_volume: float = -29) -> None:
+def add_bgm(input_path: str, output_path: str, bgm_path: str, bgm_volume: float = -30) -> None:
     """
     入力オーディオファイルにBGMを追加し、新しいファイルとして保存する関数。
 
@@ -9,7 +9,7 @@ def add_bgm(input_path: str, output_path: str, bgm_path: str, bgm_volume: float 
         input_path (str): 入力オーディオファイルのパス
         output_path (str): 出力オーディオファイルのパス
         bgm_path (str): BGMオーディオファイルのパス
-        bgm_volume (float, optional): BGMの音量（デシベル）。デフォルトは-29dB。
+        bgm_volume (float, optional): BGMの音量（デシベル）。デフォルトは-30dB。
 
     Returns:
         None
