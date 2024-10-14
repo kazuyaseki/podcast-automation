@@ -57,10 +57,10 @@ uv lock --upgrade-package langchain
 
 ### Execute
 
-If there is an executable main.py, you can run it with a command like this:
+If there is an executable script, you can run it with a command like this:
 
 ```
-uv run python main.py
+uv run python src/add_bgm.py --input_path=resources/input.mp3 --output_path=dist/output.mp3 --bgm_path=resources/bgm.mp3
 ```
 
 ### Run
